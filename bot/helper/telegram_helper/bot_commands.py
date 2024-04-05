@@ -4,27 +4,27 @@ from bot import CMD_SUFFIX, config_dict
 class _BotCommands:
     def __init__(self):
         self.StartCommand = 'start'
-        self.MirrorCommand = [f'mirror2{CMD_SUFFIX}', f'm2{CMD_SUFFIX}']
-        self.QbMirrorCommand = [f'qbmirror2{CMD_SUFFIX}', f'qm2{CMD_SUFFIX}']
-        self.YtdlCommand = [f'ytdl2{CMD_SUFFIX}', f'y2{CMD_SUFFIX}']
-        self.LeechCommand = [f'leech2{CMD_SUFFIX}', f'l2{CMD_SUFFIX}']
-        self.QbLeechCommand = [f'qbleech2{CMD_SUFFIX}', f'ql2{CMD_SUFFIX}']
-        self.YtdlLeechCommand = [f'ytdlleech2{CMD_SUFFIX}', f'yl2{CMD_SUFFIX}']
+        self.MirrorCommand = [f'mirror3{CMD_SUFFIX}', f'm3{CMD_SUFFIX}']
+        self.QbMirrorCommand = [f'qbmirror3{CMD_SUFFIX}', f'qm3{CMD_SUFFIX}']
+        self.YtdlCommand = [f'ytdl3{CMD_SUFFIX}', f'y3{CMD_SUFFIX}']
+        self.LeechCommand = [f'leech3{CMD_SUFFIX}', f'l3{CMD_SUFFIX}']
+        self.QbLeechCommand = [f'qbleech3{CMD_SUFFIX}', f'ql3{CMD_SUFFIX}']
+        self.YtdlLeechCommand = [f'ytdlleech3{CMD_SUFFIX}', f'yl3{CMD_SUFFIX}']
         if config_dict['SHOW_EXTRA_CMDS']:
-            self.MirrorCommand.extend([f'unzipmirror2{CMD_SUFFIX}', f'uzm2{CMD_SUFFIX}', f'zipmirror2{CMD_SUFFIX}', f'zm2{CMD_SUFFIX}'])
-            self.QbMirrorCommand.extend([f'qbunzipmirror2{CMD_SUFFIX}', f'quzm2{CMD_SUFFIX}', f'qbzipmirror2{CMD_SUFFIX}', f'qzm2{CMD_SUFFIX}'])
-            self.YtdlCommand.extend([f'ytdlzip2{CMD_SUFFIX}', f'yz2{CMD_SUFFIX}'])
-            self.LeechCommand.extend([f'unzipleech2{CMD_SUFFIX}', f'uzl2{CMD_SUFFIX}', f'zipleech2{CMD_SUFFIX}', f'zl2{CMD_SUFFIX}'])
-            self.QbLeechCommand.extend([f'qbunzipleech2{CMD_SUFFIX}', f'quzl2{CMD_SUFFIX}', f'qbzipleech2{CMD_SUFFIX}', f'qzl2{CMD_SUFFIX}'])
-            self.YtdlLeechCommand.extend([f'ytdlzipleech2{CMD_SUFFIX}', f'yzl2{CMD_SUFFIX}'])
-        self.CloneCommand = [f'clone2{CMD_SUFFIX}', f'c2{CMD_SUFFIX}']
-        self.CountCommand = f'count2{CMD_SUFFIX}'
-        self.DeleteCommand = f'del2{CMD_SUFFIX}'
-        self.CancelMirror = f'cancel2{CMD_SUFFIX}'
+            self.MirrorCommand.extend([f'unzipmirror3{CMD_SUFFIX}', f'uzm3{CMD_SUFFIX}', f'zipmirror3{CMD_SUFFIX}', f'zm3{CMD_SUFFIX}'])
+            self.QbMirrorCommand.extend([f'qbunzipmirror3{CMD_SUFFIX}', f'quzm3{CMD_SUFFIX}', f'qbzipmirror3{CMD_SUFFIX}', f'qzm3{CMD_SUFFIX}'])
+            self.YtdlCommand.extend([f'ytdlzip3{CMD_SUFFIX}', f'yz3{CMD_SUFFIX}'])
+            self.LeechCommand.extend([f'unzipleech3{CMD_SUFFIX}', f'uzl3{CMD_SUFFIX}', f'zipleech3{CMD_SUFFIX}', f'zl3{CMD_SUFFIX}'])
+            self.QbLeechCommand.extend([f'qbunzipleech3{CMD_SUFFIX}', f'quzl3{CMD_SUFFIX}', f'qbzipleech3{CMD_SUFFIX}', f'qzl3{CMD_SUFFIX}'])
+            self.YtdlLeechCommand.extend([f'ytdlzipleech3{CMD_SUFFIX}', f'yzl3{CMD_SUFFIX}'])
+        self.CloneCommand = [f'clone3{CMD_SUFFIX}', f'c3{CMD_SUFFIX}']
+        self.CountCommand = f'count3{CMD_SUFFIX}'
+        self.DeleteCommand = f'del3{CMD_SUFFIX}'
+        self.CancelMirror = f'cancel3{CMD_SUFFIX}'
         self.CancelAllCommand = [f'cancelall{CMD_SUFFIX}', 'cancellallbot']
-        self.ListCommand = f'list2{CMD_SUFFIX}'
+        self.ListCommand = f'list3{CMD_SUFFIX}'
         self.SearchCommand = f'search{CMD_SUFFIX}'
-        self.StatusCommand = [f'status2{CMD_SUFFIX}', f's{CMD_SUFFIX}', 'statusall']
+        self.StatusCommand = [f'status3{CMD_SUFFIX}', f's{CMD_SUFFIX}', 'statusall']
         self.UsersCommand = f'users{CMD_SUFFIX}'
         self.AuthorizeCommand = [f'authorize{CMD_SUFFIX}', f'a{CMD_SUFFIX}']
         self.UnAuthorizeCommand = [f'unauthorize{CMD_SUFFIX}', f'ua{CMD_SUFFIX}']
@@ -33,19 +33,19 @@ class _BotCommands:
         self.AddSudoCommand = f'addsudo{CMD_SUFFIX}'
         self.RmSudoCommand = f'rmsudo{CMD_SUFFIX}'
         self.PingCommand = [f'ping{CMD_SUFFIX}', f'p{CMD_SUFFIX}']
-        self.RestartCommand = [f'restart2{CMD_SUFFIX}', f'r2{CMD_SUFFIX}', 'restartall']
-        self.StatsCommand = [f'stats2{CMD_SUFFIX}', f'st2{CMD_SUFFIX}']
+        self.RestartCommand = [f'restart3{CMD_SUFFIX}', f'r3{CMD_SUFFIX}', 'restartall']
+        self.StatsCommand = [f'stats3{CMD_SUFFIX}', f'st3{CMD_SUFFIX}']
         self.HelpCommand = f'help{CMD_SUFFIX}'
-        self.LogCommand = f'log2{CMD_SUFFIX}'
+        self.LogCommand = f'log3{CMD_SUFFIX}'
         self.ShellCommand = f'shell{CMD_SUFFIX}'
         self.EvalCommand = f'eval{CMD_SUFFIX}'
         self.ExecCommand = f'exec{CMD_SUFFIX}'
         self.ClearLocalsCommand = f'clearlocals2{CMD_SUFFIX}'
-        self.BotSetCommand = [f'bsetting2{CMD_SUFFIX}', f'bs2{CMD_SUFFIX}']
-        self.UserSetCommand = [f'usetting2{CMD_SUFFIX}', f'us2{CMD_SUFFIX}']
-        self.BtSelectCommand = f'btsel2{CMD_SUFFIX}'
-        self.CategorySelect = f'ctsel2{CMD_SUFFIX}'
-        self.SpeedCommand = [f'speedtest2{CMD_SUFFIX}', f'sp2{CMD_SUFFIX}']
+        self.BotSetCommand = [f'bsetting3{CMD_SUFFIX}', f'bs3{CMD_SUFFIX}']
+        self.UserSetCommand = [f'usetting3{CMD_SUFFIX}', f'us3{CMD_SUFFIX}']
+        self.BtSelectCommand = f'btsel3{CMD_SUFFIX}'
+        self.CategorySelect = f'ctsel3{CMD_SUFFIX}'
+        self.SpeedCommand = [f'speedtest3{CMD_SUFFIX}', f'sp3{CMD_SUFFIX}']
         self.RssCommand = f'rss{CMD_SUFFIX}'
         self.LoginCommand = 'login'
         self.AddImageCommand = f'addimg{CMD_SUFFIX}'
