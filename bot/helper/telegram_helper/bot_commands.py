@@ -43,7 +43,7 @@ class _BotCommands:
         self.ClearLocalsCommand = f'clearlocals2{CMD_SUFFIX}'
         self.BotSetCommand = [f'bsetting2{CMD_SUFFIX}', f'bs2{CMD_SUFFIX}']
         self.UserSetCommand = [f'usetting2{CMD_SUFFIX}', f'us2{CMD_SUFFIX}']
-        self.BtSelectCommand = f'btsel3{CMD_SUFFIX}'
+        self.BtSelectCommand = f'btsel2{CMD_SUFFIX}'
         self.CategorySelect = f'ctsel2{CMD_SUFFIX}'
         self.SpeedCommand = [f'speedtest2{CMD_SUFFIX}', f'sp2{CMD_SUFFIX}']
         self.RssCommand = f'rss{CMD_SUFFIX}'
